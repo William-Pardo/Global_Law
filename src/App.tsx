@@ -37,6 +37,7 @@ const App: React.FC = () => {
       return (
         <div className="flex h-screen w-full justify-center items-center font-sans">
             <p className="text-brand-gray text-lg">Loading application...</p>
+            <p className="text-red-500 mt-4">Usuarios cargados: {users.length}</p>
         </div>
       );
   }
