@@ -1,8 +1,14 @@
 {
   "name": "global-law-crm",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Sistema CRM para Global Law - Gestión de clientes y procesos legales",
+  "homepage": "https://william-pardo.github.io/Global_Law/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/William-Pardo/Global_Law.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
