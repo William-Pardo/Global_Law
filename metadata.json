@@ -1,0 +1,6 @@
+{
+  "name": "Global Law CRM",
+  "description": "A CRM web application for Global Law to manage clients, track processes through a Kanban funnel, and integrate with lead generation forms. It provides a comprehensive dashboard for monitoring client status and team performance.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
