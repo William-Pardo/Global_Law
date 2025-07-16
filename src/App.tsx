@@ -50,6 +50,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <div className="fixed top-0 left-0 w-full bg-yellow-200 text-black text-center py-2 z-50">TEST: Si ves este texto, React está renderizando correctamente.</div>
       <NotificationManager />
       <HashRouter>
         <Routes>
