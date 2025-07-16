@@ -17,13 +17,8 @@ const App: React.FC = () => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 
   useEffect(() => {
-    if (!usersLoading && users.length > 0) {
-      const userExists = currentUser && users.some(u => u.id === currentUser.id);
-      if (!userExists) {
-        setCurrentUser(users.find(u => u.role === 'Admin') || users[0]);
-      } else if (!currentUser) {
-        setCurrentUser(users[0]);
-      }
+    if (!usersLoading && users.length > 0 && !currentUser) {
+      setCurrentUser(users.find(u => u.role === 'Admin') || users[0]);
     }
   }, [users, usersLoading, currentUser]);
 
