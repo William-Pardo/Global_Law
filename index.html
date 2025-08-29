@@ -1,62 +1,31 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Global Law CRM — Preview</title>
-    <meta name="description" content="Preview estático de la maqueta Global Law CRM" />
-    <style>
-      :root{--bg:#f3f4f6;--card:#fff;--muted:#6b7280;--brand:#00bfff}
-      html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,"Helvetica Neue",Arial}
-      body{background:var(--bg);color:#111}
-      .topbar{height:64px;background:linear-gradient(90deg,#012e40,#023e56);color:#fff;display:flex;align-items:center;padding:0 20px}
-      .logo{width:40px;height:40px;border-radius:6px;background:var(--brand);display:inline-block;margin-right:12px}
-      .container{display:flex;gap:20px;padding:24px}
-      .sidebar{width:220px;background:var(--card);border-radius:8px;padding:12px;box-shadow:0 1px 3px rgba(2,6,23,0.06)}
-      .main{flex:1}
-      .card{background:var(--card);padding:16px;border-radius:8px;margin-bottom:12px;box-shadow:0 1px 2px rgba(2,6,23,0.04)}
-      .muted{color:var(--muted);font-size:13px}
-      .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-      .big{height:180px}
-      .btn{display:inline-block;padding:8px 12px;background:var(--brand);color:#012; border-radius:6px;font-weight:600;text-decoration:none}
-    </style>
+    <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Global_Law/assets/logo-B_SY1GJM.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Law CRM</title>
+  <link rel="manifest" href="/Global_Law/assets/manifest-D_0yFLE7.json">
+    <meta name="theme-color" content="#00BFFF">
+  <link rel="apple-touch-icon" href="/Global_Law/assets/logo-B_SY1GJM.svg">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- Eliminado Tailwind CDN para producción, se usará index.css generado -->
+  <!-- Eliminado bloque de configuración de Tailwind para producción -->
+    <script>
+      // Prevents FOUC (Flash of Unstyled Content) for dark mode.
+      // On page load, set theme based on system preference.
+      try {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (_) {}
+    </script>
+    <script type="module" crossorigin src="/Global_Law/assets/index-B-O09_Bx.js"></script>
+    <link rel="stylesheet" crossorigin href="/Global_Law/assets/index-DwljMQFo.css">
   </head>
-  <body>
-    <header class="topbar">
-      <div class="logo" aria-hidden></div>
-      <div>
-        <div style="font-weight:700">Global Law CRM</div>
-        <div class="muted">Preview estático — Interfaz y flujo simulados</div>
-      </div>
-      <div style="margin-left:auto"><a class="btn" href="#">Abrir demo</a></div>
-    </header>
-
-    <div class="container">
-      <aside class="sidebar">
-        <div style="font-weight:700;margin-bottom:8px">Panel</div>
-        <div class="muted">Clientes</div>
-        <div class="muted">Leads</div>
-        <div class="muted">Integraciones</div>
-        <div class="muted">Ajustes</div>
-      </aside>
-
-      <main class="main">
-        <section class="card">
-          <h3 style="margin:0 0 8px">Resumen</h3>
-          <div class="muted">Tareas pendientes, leads y actividad reciente.</div>
-        </section>
-
-        <section class="grid">
-          <div class="card big">Kanban (simulado)</div>
-          <div class="card big">Dashboard - Embudo</div>
-          <div class="card big">Actividad reciente</div>
-        </section>
-
-        <section class="card">
-          <h4 style="margin:0 0 8px">Clientes (simulado)</h4>
-          <div class="muted">Listado con datos de ejemplo para la demo</div>
-        </section>
-      </main>
-    </div>
+  <body class="bg-brand-light-gray dark:bg-brand-dark-bg font-sans">
+    <div id="root"></div>
   </body>
 </html>
